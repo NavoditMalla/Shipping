@@ -14,7 +14,7 @@ public class InsertionSort{
                 int j = i - 1;
 
                 // Compare based on the order (ascending or descending)
-                while (j >= 0 && 
+                while (j >= 0 &&        
                        ((ascending && list.get(j).getTo().compareToIgnoreCase(key.getTo()) > 0) ||
                         (!ascending && list.get(j).getTo().compareToIgnoreCase(key.getTo()) < 0))) {
                     list.set(j + 1, list.get(j));

@@ -713,7 +713,7 @@ public class shippingmain extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, "Please enter both username and password.", "Login Error", JOptionPane.ERROR_MESSAGE);
         }
         else if(!username.equals("admin")||!password.equals("admin")){
-            JOptionPane.showMessageDialog(null, "Username and Password mismatch", "Login Error", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(null, "Username or Password is incorrect", "Login Error", JOptionPane.ERROR_MESSAGE);
         }
         else {
             panelmain.setVisible(true);
@@ -732,7 +732,7 @@ public class shippingmain extends javax.swing.JFrame {
     else if(sortoption == "Sort by From Location"){
     Selection.selectionSortByFrom(shiplist, true); // Sort in descending order
     loadshiptable(); // Refresh the table
-    JOptionPane.showMessageDialog(this, "Sorted by 'From' in Descending Order!", "Sort", JOptionPane.INFORMATION_MESSAGE);
+    JOptionPane.showMessageDialog(this, "Sorted by 'From' in Ascending Order!", "Sort", JOptionPane.INFORMATION_MESSAGE);
     }
     else if(sortoption == "Sort by To Location"){
     Insertion.insertionSortByTo(shiplist, true); // Sort in ascending order
@@ -791,7 +791,7 @@ public class shippingmain extends javax.swing.JFrame {
     else if(sortoption == "Sort by To Location"){
     Insertion.insertionSortByTo(shiplist, false); // Sort in ascending order
     loadshiptable(); // Refresh the table
-    JOptionPane.showMessageDialog(this, "Sorted by 'To' in Ascending Order!", "Sort", JOptionPane.INFORMATION_MESSAGE);
+    JOptionPane.showMessageDialog(this, "Sorted by 'To' in Descending Order!", "Sort", JOptionPane.INFORMATION_MESSAGE);
     }
     }//GEN-LAST:event_sort2ActionPerformed
 
